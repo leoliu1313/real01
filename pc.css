@@ -1,0 +1,17 @@
+.footer .footer-cell {
+    padding: 1%;
+}
+
+.footer #footer-row2 .width-buffer {
+    display: inline-block;
+    width: 1%;
+}
+
+.footer #footer-row2 .width-buffer-br {
+    display: inline-block;
+    width: 2%;
+}
+
+.footer br {
+    display: none;
+}

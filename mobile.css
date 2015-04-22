@@ -1,0 +1,229 @@
+/* the whole webpage structure */
+
+/* footer in the bottom has 5% height of browser height */
+
+html,
+body {
+    display: block; /* it must be block as default */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.not-footer {
+    display: block; /* it must be block as default */
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%; /* at least 100% */
+    margin: 0 0 -200px; /* leave 200px for footer */
+    padding: 0;
+}
+
+.not-footer-buffer {
+    height: 50px; /* 50px */
+}
+
+.footer {
+    display: block; /* it must be block as default */
+    bottom: 0;
+    width: 100%;
+    height: 200px; /* 200px */
+    margin: 0;
+    padding: 0;
+}
+
+/* set up footer style */
+
+.footer .footer-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0%;
+    /* the following are the style inside the footer */
+    background-color: bisque;
+    /* real is #F9F9F9 */
+    text-align: center;
+}
+
+.footer .footer-row {
+    display: table-row;
+}
+
+.footer .footer-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3%;
+}
+
+.footer p {
+    margin: 0;
+    color: #000000;
+}
+
+.footer #footer-row1 {
+    height: 75%;
+}
+
+.footer #footer-row2 {
+    height: 25%;
+    background-color: #9F9FA0;
+}
+
+.footer #footer-row2 p {
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+.footer #footer-row2 img {
+    display: inline-block;
+    height: 25px; /* half of 50px */
+}
+
+.footer form,
+.footer .form-group,
+.footer input {
+    display: inline-block;
+    height: inherit;
+    margin: 0;
+}
+
+.footer #button-sign-up,
+.footer #button-sign-up:focus,
+.footer #button-sign-up:active:focus,
+.footer #button-sign-up:focus {
+    color: red;
+    background-color: #9F9FA0;
+    border: transparent;
+}
+
+.footer a,
+.footer a:link,
+.footer a:visited {
+    color: inherit;
+}
+
+.footer .span-black {
+    color: black;
+}
+
+.footer #button-location {
+    color: black;
+    background-color: #9F9FA0;
+    border: transparent;
+}
+
+.footer .dropdown-menu {
+    right: 0;
+    left: auto;
+    min-width: 100px;
+}
+
+.footer #footer-row2 .width-buffer {
+    display: none;
+    width: 1%;
+}
+
+.footer #footer-row2 .width-buffer-br {
+    display: none;
+    width: 2%;
+}
+
+.footer br {
+    display: inline;
+}
+
+/* set up max container width */
+
+.container {
+    max-width: 700px;
+}
+
+/* set up core data area */
+
+.container-core {
+    margin-top: 150px;
+    padding: 0 15px 0;
+}
+
+/* set up narbar */
+
+.nav li {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.navbar .navbar-toggle-float-left {
+    float: left;
+    margin-left: 15px;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+/* change narbar height */
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 150px;
+    height: 150px;
+    padding-top: 0;
+}
+
+/* set up narbar color */
+
+.navbar-default {
+    background-color: #9F9FA0;
+    border-color: #000000;
+}
+
+.navbar-default .navbar-brand {
+    color: #FFFFFF;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #000000;
+}
+
+.navbar-default .navbar-text {
+    color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #000000;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #000000;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #000000;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFFFFF;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #FFFFFF;
+}
+
+.navbar-default .navbar-link {
+    color: #FFFFFF;
+}
+
+.navbar-default .navbar-link:hover {
+    color: #000000;
+}
