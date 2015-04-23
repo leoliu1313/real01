@@ -1,6 +1,14 @@
-/* the whole webpage structure */
+/*
+set up webpage structure
+set up webpage structure
+set up webpage structure
+*/
 
-/* footer in the bottom has 5% height of browser height */
+/* header on the top has 200px height */
+
+/* core data */
+
+/* footer on the bottom has 200px height */
 
 html,
 body {
@@ -16,8 +24,14 @@ body {
     overflow: hidden;
     width: 100%;
     min-height: 100%; /* at least 100% */
-    margin: 0 0 -200px; /* leave 200px for footer */
+    margin: 0 0 -200px; /* 200px footer */
     padding: 0;
+}
+
+.navbar-brand {
+    line-height: 200px; /* 200px header */
+    height: 200px; /* 200px header */
+    padding-top: 0;
 }
 
 .not-footer-buffer {
@@ -33,7 +47,11 @@ body {
     padding: 0;
 }
 
-/* set up footer style */
+/*
+set up footer style
+set up footer style
+set up footer style
+*/
 
 .footer .footer-table {
     display: table;
@@ -41,9 +59,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0%;
-    /* the following are the style inside the footer */
-    background-color: bisque;
-    /* real is #F9F9F9 */
+    background-color: #000000; /* use red for debug purpose */
     text-align: center;
 }
 
@@ -64,6 +80,7 @@ body {
 
 .footer #footer-row1 {
     height: 75%;
+    background-color: #FAFAFA;
 }
 
 .footer #footer-row2 {
@@ -97,10 +114,11 @@ body {
     border: transparent;
 }
 
-.footer a,
-.footer a:link,
-.footer a:visited {
-    color: inherit;
+.footer .a-email,
+.footer .a-email:link,
+.footer .a-email:visited {
+    text-decoration: underline;
+    /* color: inherit; */
 }
 
 .footer .span-black {
@@ -140,13 +158,6 @@ body {
     display: inline;
 }
 
-.img-center {
-    display: block;
-    margin: auto; /* large */
-    max-width: 1400px; /* large */
-    width: 100%;
-}
-
 #img-banner-small {
     display: block;
 }
@@ -155,38 +166,65 @@ body {
     display: none;
 }
 
-/* set up max container width */
+/*
+set up core data
+set up core data
+set up core data
+*/
 
-.container {
-    margin: auto; /* large */
-    max-width: 1400px; /* large */
-    padding: 0;
+.navbar {
+    margin-bottom: 0px; /* core data top buffer */
 }
-
-/* change narbar height */
-
-.navbar-brand,
-.navbar-nav li a {
-    line-height: 200px; /* 200px header */
-    height: 200px; /* 200px header */
-    padding-top: 0;
-}
-
-/* set up core data area */
 
 .row-no-margin .row {
-    margin: 0;
+    margin: 0; /* core data row buffer */
 }
 
 .row-last-buffer {
-    height: 0px; /* core bottom buffer */
+    height: 20px; /* core data bottom buffer */
 }
 
-.navbar {
-  margin-bottom: 0px; /* core top buffer */
+.container-img {
+    display: block; /* center */
+    margin: auto; /* center */
+    padding: 0;
 }
 
-/* set up narbar */
+.img-center {
+    display: block; /* center */
+    margin: auto; /* center */
+    width: 100%;
+    padding: 0;
+}
+
+/*
+set up header
+set up header
+set up header
+*/
+
+/* change navbar background style */
+
+.navbar-img {
+    background-image: url('header.png');
+    border: 0;
+}
+
+/* change toggle button style */
+
+.navbar .navbar-toggle-float-left {
+    float: left;
+    margin-left: 45px;
+    margin-top: 30px;
+}
+
+/* change toggle down menu style */
+
+/* default shall be one column with multiple rows */
+
+/* the following shall display one line in the middle */
+
+/*
 
 .nav li {
     display: inline-block;
@@ -194,13 +232,23 @@ body {
     float: none;
 }
 
-.navbar .navbar-toggle-float-left {
-    float: left;
-    margin-left: 15px;
+.navbar-nav li a {
+    height: 100px;
 }
 
-.navbar .navbar-collapse {
-    text-align: center;
+*/
+
+.navbar-collapse {
+    background-color: #FFFFFF;
+    padding-bottom: 50px;
+    padding-left: 90px;
+    /* text-align: center; */
+}
+
+.toggle-down-menu {
+    background-color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* set up narbar color */
@@ -224,7 +272,7 @@ body {
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #FFFFFF;
+    color: #9F9FA0; /* toggle down menu color */
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -232,22 +280,31 @@ body {
     color: #000000;
 }
 
-.navbar-default .navbar-toggle {
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:focus {
     border-color: #000000;
+    background-color: #9F9FA0;
 }
 
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
+.navbar-default .navbar-toggle:hover {
     background-color: #000000;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
+.navbar-default .navbar-toggle .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #000000;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
     background-color: #FFFFFF;
 }
 
-.navbar-default .navbar-collapse,
+.navbar-default .navbar-collapse {
+    border-color: #FFFFFF; /* toggle down menu */
+}
+
 .navbar-default .navbar-form {
-    border-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 .navbar-default .navbar-link {

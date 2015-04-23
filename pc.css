@@ -1,3 +1,21 @@
+/*
+set up webpage structure
+set up webpage structure
+set up webpage structure
+*/
+
+.navbar {
+  margin-bottom: 20px; /* core top buffer */
+}
+
+/*
+set up footer style
+set up footer style
+set up footer style
+*/
+
+/* footer has no br for wide screen */
+
 .footer .footer-cell {
     padding: 1%;
 }
@@ -16,6 +34,14 @@
     display: none;
 }
 
+/*
+set up core data
+set up core data
+set up core data
+*/
+
+/* change banner size for wide screen */
+
 #img-banner-small {
     display: none;
 }
@@ -24,10 +50,37 @@
     display: block;
 }
 
-.row-last-buffer {
-    height: 20px; /* core bottom buffer */
+.img-center {
+    /* the width size of the given banner.png is less than 1400px */
+    max-width: 1400px;
+    /* consistent style between browser width more than 1400px and less than 1400px */
+    padding: 1%;
 }
 
-.navbar {
-  margin-bottom: 20px; /* core top buffer */
+/*
+set up header
+set up header
+set up header
+*/
+
+.navbar-nav li a {
+    line-height: 200px; /* 200px header */
+    height: 200px; /* 200px header */
+    padding-top: 0;
+}
+
+.navbar-collapse {
+    background-color: transparent;
+    padding-bottom: 50px;
+    padding-left: 90px;
+}
+
+.toggle-down-menu {
+    background-color: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #FFFFFF; /* toggle down menu color */
 }
