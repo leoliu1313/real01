@@ -26,6 +26,8 @@ body {
     min-height: 100%; /* at least 100% */
     margin: 0 0 -200px; /* 200px footer */
     padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    /* font-family: 'Poiret One', cursive; */
 }
 
 .navbar-brand {
@@ -45,6 +47,7 @@ body {
     height: 200px; /* 200px footer */
     margin: 0;
     padding: 0;
+    font-family: 'Orbitron', sans-serif;
 }
 
 /*
@@ -91,6 +94,7 @@ set up footer style
 .footer #footer-row2 p {
     display: inline-block;
     color: #FFFFFF;
+    line-height: 50px;
 }
 
 .footer #footer-row2 img {
@@ -294,7 +298,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 /* toggle down menu color */
 
 .navbar-default .navbar-nav > li > a {
-    color: #9F9FA0;
+  color: #9F9FA0;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15);
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -332,3 +337,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .navbar-default .navbar-link:hover {
     color: #99bf00;
 }
+
