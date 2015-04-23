@@ -5,7 +5,7 @@ set up webpage structure
 */
 
 .navbar {
-  margin-bottom: 20px; /* core top buffer */
+    margin-bottom: 20px; /* core top buffer */
 }
 
 /*
@@ -40,6 +40,10 @@ set up core data
 set up core data
 */
 
+.navbar {
+    margin-bottom: 0px; /* core data top buffer */
+}
+
 /* change banner size for wide screen */
 
 #img-banner-small {
@@ -62,6 +66,10 @@ set up header
 set up header
 set up header
 */
+
+.container-narrow {
+    max-width: none;
+}
 
 .navbar-nav li a {
     line-height: 200px; /* 200px header */
