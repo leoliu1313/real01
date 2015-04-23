@@ -23,3 +23,11 @@
 #img-banner {
     display: block;
 }
+
+.row-last-buffer {
+    height: 20px; /* core bottom buffer */
+}
+
+.navbar {
+  margin-bottom: 20px; /* core top buffer */
+}

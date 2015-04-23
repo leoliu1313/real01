@@ -160,6 +160,7 @@ body {
 .container {
     margin: auto; /* large */
     max-width: 1400px; /* large */
+    padding: 0;
 }
 
 /* change narbar height */
@@ -173,16 +174,16 @@ body {
 
 /* set up core data area */
 
-.container-core {
-    padding: 0 15px 0;
-}
-
 .row-no-margin .row {
     margin: 0;
 }
 
 .row-last-buffer {
-    height: 20px;
+    height: 0px; /* core bottom buffer */
+}
+
+.navbar {
+  margin-bottom: 0px; /* core top buffer */
 }
 
 /* set up narbar */
