@@ -21,14 +21,14 @@ body {
 }
 
 .not-footer-buffer {
-    height: 50px; /* 50px */
+    height: 200px; /* 200px footer */
 }
 
 .footer {
     display: block; /* it must be block as default */
     bottom: 0;
     width: 100%;
-    height: 200px; /* 200px */
+    height: 200px; /* 200px footer */
     margin: 0;
     padding: 0;
 }
@@ -91,8 +91,7 @@ body {
 
 .footer #button-sign-up,
 .footer #button-sign-up:focus,
-.footer #button-sign-up:active:focus,
-.footer #button-sign-up:focus {
+.footer #button-sign-up:active {
     color: red;
     background-color: #9F9FA0;
     border: transparent;
@@ -118,6 +117,13 @@ body {
     right: 0;
     left: auto;
     min-width: 100px;
+    padding: 0;
+    background-color: #9F9FA0;
+}
+
+.footer .dropdown-menu>li>a:hover,
+.footer .dropdown-menu>li>a:focus {
+    background-color: #FFFFFF;
 }
 
 .footer #footer-row2 .width-buffer {
@@ -134,17 +140,40 @@ body {
     display: inline;
 }
 
+.img-center {
+    display: block;
+    margin: auto; /* large */
+    max-width: 1400px; /* large */
+}
+
 /* set up max container width */
 
 .container {
-    max-width: 700px;
+    margin: auto; /* large */
+    max-width: 1400px; /* large */
+}
+
+/* change narbar height */
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 200px; /* 200px header */
+    height: 200px; /* 200px header */
+    padding-top: 0;
 }
 
 /* set up core data area */
 
 .container-core {
-    margin-top: 150px;
     padding: 0 15px 0;
+}
+
+.row-no-margin .row {
+    margin: 0;
+}
+
+.row-last-buffer {
+    height: 20px;
 }
 
 /* set up narbar */
@@ -162,15 +191,6 @@ body {
 
 .navbar .navbar-collapse {
     text-align: center;
-}
-
-/* change narbar height */
-
-.navbar-brand,
-.navbar-nav li a {
-    line-height: 150px;
-    height: 150px;
-    padding-top: 0;
 }
 
 /* set up narbar color */
