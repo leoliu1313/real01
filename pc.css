@@ -89,6 +89,13 @@ set up header
     margin-bottom: 0;
 }
 
+/* toggle down menu color */
+
 .navbar-default .navbar-nav > li > a {
-    color: #FFFFFF; /* toggle down menu color */
+    color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #FFFFFF	;
 }
