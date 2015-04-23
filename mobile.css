@@ -144,6 +144,15 @@ body {
     display: block;
     margin: auto; /* large */
     max-width: 1400px; /* large */
+    width: 100%;
+}
+
+#img-banner-small {
+    display: block;
+}
+
+#img-banner {
+    display: none;
 }
 
 /* set up max container width */

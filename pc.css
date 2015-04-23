@@ -15,3 +15,11 @@
 .footer br {
     display: none;
 }
+
+#img-banner-small {
+    display: none;
+}
+
+#img-banner {
+    display: block;
+}
