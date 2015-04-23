@@ -27,7 +27,7 @@ set up footer style
 
 .footer #footer-row2 .width-buffer-br {
     display: inline-block;
-    width: 2%;
+    width: 0.5%;
 }
 
 .footer br {
@@ -71,12 +71,6 @@ set up header
     max-width: none;
 }
 
-.navbar-nav li a {
-    line-height: 200px; /* 200px header */
-    height: 200px; /* 200px header */
-    padding-top: 0;
-}
-
 .navbar-collapse {
     background-color: transparent;
     padding-bottom: 50px;
@@ -92,7 +86,14 @@ set up header
 /* toggle down menu color */
 
 .navbar-default .navbar-nav > li > a {
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 165px; /* 200px header */
+    height: 200px; /* 200px header */
+    padding-top: 0;
     color: #FFFFFF;
+    font-size: 17px;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
