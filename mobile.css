@@ -259,13 +259,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 
 .navbar-collapse {
     background-color: #FFFFFF;
-    padding-bottom: 50px;
-    padding-left: 90px;
-    /* text-align: center; */
+    padding-top: 15px;
+    padding-bottom: 35px;
+    /* padding-left: 90px; */
+    text-align: center;
 }
 
 .toggle-down-menu {
-    background-color: #FFFFFF;
+    background-color: transparent;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -278,16 +279,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 
 .navbar-default .navbar-brand {
-    color: #FFFFFF;
+    color: #99bf00;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #FFFFFF;
+    color: #99bf00;
 }
 
 .navbar-default .navbar-text {
-    color: #FFFFFF;
+    color: #99bf00;
 }
 
 /* toggle down menu color */
@@ -303,36 +304,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 
 .navbar-default .navbar-toggle,
 .navbar-default .navbar-toggle:focus {
-    border-color: #000000;
-    background-color: #9F9FA0;
+    border: 0;
+    background-color: transparent;
 }
 
 .navbar-default .navbar-toggle:hover {
-    border-color: #000000;
-    background-color: #000000;
+    background-color: transparent;
 }
 
 .navbar-default .navbar-toggle .icon-bar,
 .navbar-default .navbar-toggle .icon-bar:focus {
-    background-color: #FFFFFF;
+    background-color: #99bf00;
 }
 
 .navbar-default .navbar-toggle:hover .icon-bar {
-    background-color: #9F9FA0;
+    background-color: #99bf00;
 }
 
 .navbar-default .navbar-collapse {
     border-color: #FFFFFF; /* toggle down menu */
 }
 
-.navbar-default .navbar-form {
-    background-color: #FFFFFF;
-}
-
 .navbar-default .navbar-link {
-    color: #FFFFFF;
+    color: #99bf00;
 }
 
 .navbar-default .navbar-link:hover {
-    color: #000000;
+    color: #99bf00;
 }
