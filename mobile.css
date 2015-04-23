@@ -203,6 +203,17 @@ set up header
 set up header
 */
 
+.container-fluid > .container-narrow,
+.container > .container-narrow{
+    max-width: 500px;
+    margin: auto;  /* center */
+}
+
+#img-logo {
+    height: 50px;
+    margin-top: 120px;
+}
+
 /* change navbar background style */
 
 .navbar-img {
@@ -212,10 +223,10 @@ set up header
 
 /* change toggle button style */
 
-.navbar .navbar-toggle-float-left {
-    float: left;
-    margin-left: 45px;
-    margin-top: 30px;
+.navbar .navbar-toggle-float {
+    float: right;
+    margin-right: 25px;
+    margin-top: 75px;
 }
 
 /* change toggle down menu style */
@@ -287,16 +298,17 @@ set up header
 }
 
 .navbar-default .navbar-toggle:hover {
+    border-color: #000000;
     background-color: #000000;
 }
 
 .navbar-default .navbar-toggle .icon-bar,
-.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #000000;
+.navbar-default .navbar-toggle .icon-bar:focus {
+    background-color: #FFFFFF;
 }
 
 .navbar-default .navbar-toggle:hover .icon-bar {
-    background-color: #FFFFFF;
+    background-color: #9F9FA0;
 }
 
 .navbar-default .navbar-collapse {
