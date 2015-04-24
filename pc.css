@@ -89,7 +89,8 @@ set up header
     padding: 0;
     margin-left: 10px;
     margin-right: 10px;
-    line-height: 165px; /* 200px header */
+    /* height of menu links on the right side of header */
+    line-height: 200px;
     height: 200px; /* 200px header */
     padding-top: 0;
     color: #FFFFFF;
